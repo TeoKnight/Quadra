@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Sans";
+    src: url(../fonts/microsoftsansserif.ttf);
+}
+
+@font-face {
+    font-family: "Raydis";
+    src: url(../fonts/RAYDIS.otf);
+}
+
+@font-face {
+    font-family: "Lorenzo";
+    src: url(../fonts/Lorenzo\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lorenzo-Bold";
+    src: url(../fonts/Lorenzo\ Sans\ Bold.ttf);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Heder (Начало) */
+header {
+    justify-self: center;
+    height: 80px;
+    display: flex;
+    gap: 67px;
+    font-family: "Lorenzo";
+}
+
+header img {
+    align-self: center;
+    width: 149px;
+    height: 43px;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+}
+
+.nav-first {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-second {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.order {
+    cursor: pointer;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8.8px;
+    background-color: rgba(4, 20, 45, 1);
+    color: white;
+}
+
+.order:hover{
+    background-color: rgb(71, 9, 9);
+}
+/* Header (Конец) */
+
+/* Banner (Начало) */
+/* Netlify не показывает этот блок */
+/* .banner {
+    width: 1900px;
+    height: 1012px;
+    position: relative;
+}
+
+.banner-main {
+    width: 1900px;
+    height: 1012px;
+    justify-self: center;
+    z-index: 100;
+}
+
+.banner-main img {
+    position: relative;
+}
+
+.banner-second-layer {
+    position: absolute;
+    width: 1900px;
+    height: 1012px;
+    justify-self: center;
+    z-index: 120;
+}
+
+.banner-text-1 {
+    position: absolute;
+    top: 123px;
+    left: 300px;
+    z-index: 110;
+}
+
+.banner-quadra {
+    position: absolute;
+    top: 253px;
+    left: 400px;
+    z-index: 110;
+}
+
+.banner-text-2 {
+    position: absolute;
+    top: 423px;
+    left: 140px;
+    z-index: 110;
+}
+
+.banner-text-3 {
+    position: absolute;
+    top: 676px;
+    right: 100px;
+    z-index: 133;
+}
+
+.banner-logo {
+    position: absolute;
+    bottom: -40px;
+    right: 620px;
+} */
+
+.banner-main{
+    justify-self: center;
+}
+/* Banner (Конец) */
+
+/* About Us (Начало) */
+.about {
+    width: 1200px;
+    padding-top: 118px;
+    padding-bottom: 120px;
+    justify-content: center;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    gap: 81px;
+}
+
+.slogan img {
+    width: 733px;
+    height: 106px;
+}
+
+.text-about {
+    padding-top: 15px;
+    width: 350px;
+}
+
+.text-about h4 {
+    font-family: "Sans";
+    font-size: 18px;
+}
+
+.about-main {
+    padding-top: 53px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-second-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-third-row {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    position: relative;
+}
+
+.about-1-main{
+    position: absolute;
+    font-family: "Lorenzo-Bold";
+    font-size: 30px;
+    top: 90px;
+    left: 20px;
+}
+
+.about-1{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    opacity: 0;
+    z-index: 80;
+}
+
+.about-1:hover{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+}
+
+
+.about-2-main{
+    position: absolute;
+    font-family: "Lorenzo-Bold";
+    font-size: 30px;
+    top: 280px;
+    left: 20px;
+}
+
+.about-2{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    opacity: 0;
+    z-index: 80;
+}
+
+.about-2:hover{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    opacity: 1;
+}
+
+
+.about-3-main{
+    position: absolute;
+    font-family: "Lorenzo-Bold";
+    font-size: 30px;
+    top: 460px;
+    left: 20px;
+}
+
+.about-3{
+    position: absolute;
+    top: 380px;
+    left: 40px;
+    opacity: 0;
+    z-index: 80;
+}
+
+.about-3:hover{
+    position: absolute;
+    top: 380px;
+    left: 20px;
+    opacity: 1;
+}
+/* About Us (Конец) */
+
+/* Car-Configurator (Начало) */
+.btn-selected {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 8px;
+    transition: transform 0.3s;
+}
+
+.btn-selected {
+    transform: scale(1) !important;
+}
+
+/* Car-Configurator (Конец) */
+
+form {
+    margin-top: 78px;
+    width: 100%;
+    height: 564px;
+    background-color: rgba(4, 20, 45, 1);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-con {
+    width: 1550px;
+    display: flex;
+    position: relative;
+}
+
+.form-images {
+    position: absolute;
+    left: -140px;
+}
+
+.form-car {
+    position: absolute;
+    top: 0;
+}
+
+.form-main {
+    position: absolute;
+    right: 180px;
+}
+
+.form-text-main {
+    padding-top: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.form-text-main h2 {
+    font-family: "Lorenzo-Bold";
+    font-size: 32px;
+}
+
+.form-text-main h3 {
+    font-family: "Lorenzo-Bold";
+    opacity: 80%;
+    font-size: 20px;
+}
+
+.form-block {
+    display: flex;
+    gap: 27px;
+}
+
+.form-first-row {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.form-first-row input {
+    background-color: rgba(4, 20, 45, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.815);
+    width: 210px;
+    height: 60px;
+}
+
+.form-second-row {
+    margin-top: 40px;
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.form-second-row a {
+    padding-left: 10px;
+    color: #ccc;
+    opacity: 60%;
+    font-size: 13px;
+    font-family: "Lorenzo";
+}
+
+.form-second-row a span {
+    text-decoration: underline;
+}
+
+.input-color {
+    color: white;
+}
+
+.form-first-row input[type=email] {
+    padding-left: 20px;
+}
+
+.form-first-row input[type=tel] {
+    padding-left: 20px;
+}
+
+.form-first-row input[type=text] {
+    padding-left: 20px;
+}
+
+.input-2-color {
+    color: white;
+}
+
+.form-second-row input[type=text] {
+    padding-left: 20px;
+    padding-bottom: 160px;
+}
+
+.form-second-row input {
+    width: 410px;
+    height: 226px;
+    background-color: rgba(4, 20, 45, 1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.815);
+}
+
+.form-button {
+    background-color: #fff;
+    opacity: 80%;
+    width: 210px;
+    height: 48px;
+    font-size: 18px;
+    font-family: "Lorenzo-Bold";
+    border-radius: 10px;
+}
+
+/* Отзывы (Начало) */
+.reviews {
+    padding-bottom: 52px;
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.reviews-text-name h2 {
+    padding-top: 130px;
+    font-family: "Raydis";
+    font-size: 64px;
+    color: rgba(4, 20, 45, 1);
+    padding-bottom: 40px;
+    padding-left: 180px;
+}
+
+.review {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 15px 35px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 15px 35px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 15px 35px 0px rgba(34, 60, 80, 0.2);
+    width: 357px;
+    height: 471px;
+    border-radius: 10px;
+}
+
+.review-outer {
+    padding: 32px 18px 10px 18px;
+    border: 3px solid #9d9d9d54;
+    width: 308px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.review-outer p{
+    font-size: 16px;
+    color: black;
+    opacity: 80%;
+    line-height: 170%;
+    font-family: "Lorenzo-Bold";
+}
+
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+.rating h3{
+    font-family: "Raydis";
+    font-size: 32px;
+}
+
+.review-inner{
+    padding-top: 26px;
+    display: flex;
+    gap: 26px;
+}
+
+.customer{
+    padding-right: 95px;
+}
+
+.review-inner img{
+    width: 45px;
+    height: 45px;
+}
+
+.customer h4{
+    font-family: "Lorenzo-Bold";
+    font-size: 20px;
+}
+
+.customer p{
+    font-family: "Lorenzo-Bold";
+    font-size: 15px;
+}
+
+.arrows img{
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    gap: 68px;
+}
+/* Отзывы (Конец) */
+
+/* Footer (Начало) */
+footer{
+    color: white;
+    font-size: 20px;
+    font-family: "Lorenzo";
+}
+
+.footer-img{
+    justify-self: center;
+    position: relative;
+}
+
+.footer-block{
+    width: 1200px;
+    position: absolute;
+    top: 190px;
+    left: 340px;
+}
+
+.footer-blocks-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-cat-second{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-cat{
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.footer-cat-img{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.footer-cat-second-text{
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-cat-first{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-third{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-third-text{
+    cursor: pointer;
+}
+
+.footer-last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-up{
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.footer-up-2{
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.footer-last{
+    padding-top: 30px;
+}
+/* Footer (Конец) */

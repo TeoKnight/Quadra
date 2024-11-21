@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadra</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.svg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header (Начало) -->
+    <header class="container">
+        <img src="assets/img/header/logo.svg" alt="">
+
+        <nav>
+            <div class="nav-first">
+                <a href="#car-configurator-id">Калькулятор</a>
+                <a href="#about-id">О нас</a>
+            </div>
+
+            <div class="nav-second">
+                <a href="#review-id">Отзывы</a>
+                <button class="order">Заказать</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Header (Конец) -->
+
+    <!-- Banner (Начало) -->
+     <!-- Netlify не показывает этот блок -->
+    <!-- <div class="banner container">
+        <div class="banner-main">
+            <div class="banner-second-layer">
+                <img src="assets/img/banner/second-layer.png" alt="">
+            </div>
+            <img src="assets/img/banner/banner.png" alt="">
+        </div>
+        <div class="banner-text-1">
+            <img src="assets/img/banner/banner-text-1.png" alt="">
+        </div>
+        <div class="banner-quadra">
+            <img src="assets/img/banner/Quadra.svg" alt="">
+        </div>
+        <div class="banner-text-2">
+            <img src="assets/img/banner/banner-text-2.svg" alt="">
+        </div>
+        <div class="banner-text-3">
+            <img src="assets/img/banner/banner-text-3.svg" alt="">
+        </div>
+        <div class="banner-logo">
+            <img src="assets/img/banner/logo.png" alt="">
+        </div>
+    </div> -->
+    <div class="banner-main">
+        <img src="assets/img/banner/banner-main.png" alt="">
+    </div>
+    <!-- Banner (Конец) -->
+
+    <!-- About-Us (Начало) -->
+    <div class="about container" id="about-id">
+        <div class="slogan">
+            <img src="assets/img/about-us/slogan.png" alt="">
+            <div class="text-about">
+                <h4>Мы объединяем передовые технологии, инновационный дизайн и заботу об экологии, чтобы предоставить
+                    нашим
+                    клиентам не просто автомобили, а образ жизни.</h4>
+            </div>
+        </div>
+
+        <div class="about-main">
+            <div class="about-first-row">
+                <img src="assets/img/about-us/1.png" alt="">
+            </div>
+
+            <div class="about-second-row">
+                <img src="assets/img/about-us/2-1.png" alt="">
+                <img src="assets/img/about-us/2-2.png" alt="">
+            </div>
+
+            <div class="about-third-row">
+                <img src="assets/img/about-us/3.png" alt="">
+                <div class="about-1-main">
+                    <h3>Наша компания</h3>
+                </div>
+                <div class="about-1">Quadra использует передовые технологии в разработке электромобилей, обеспечивая
+                    высокую эффективность</div>
+                <img src="assets/img/about-us/3.png" alt="">
+                <div class="about-2-main">
+                    <h3>Экологичность</h3>
+                </div>
+                <div class="about-2">Мы стремимся к устойчивому развитию и заботе об окружающей среде. Автомобили
+                    Quadra снижают выбросы углерода</div>
+                <img src="assets/img/about-us/3.png" alt="">
+                <div class="about-3-main">
+                    <h3>Личный подход</h3>
+                </div>
+                <div class="about-3">Quadra использует передовые технологии в разработке электромобилей, обеспечивая
+                    высокую эффективность</div>
+            </div>
+        </div>
+    </div>
+    <!-- About-Us (Конец) -->
+
+    <!-- Car-Configurator (Начало) -->
+    <main class="flex flex-col md:flex-row justify-between px-4 md:px-10 py-6 container" id="car-configurator-id">
+        <section class="w-full md:w-3/4">
+            <div class="sticky top-24">
+                <div class="h-96 bg-gray-200 flex items-center justify-center overflow-hidden mb-4">
+                    <img src="assets/img/car-configurator/model-y-stealth-grey.jpg" alt="Model Y"
+                        class="max-w-full h-auto transform scale-125" id="exterior-image">
+                </div>
+
+                <div class="h-96 bg-gray-200 flex items-center justify-center overflow-hidden mb-4">
+                    <img src="assets/img/car-configurator/model-y-interior-dark.jpg" alt="Model Y Interior"
+                        class="max-w-full h-auto transform scale-125" id="interior-image">
+                </div>
+            </div>
+        </section>
+
+        <aside class="w-full md:w-1/3 pl-0 md:pl-8 mt-6 md:mt-0 z-2">
+            <h1 class="text-5xl text-center font-bold mb-5">Model Y</h1>
+            <h2 class="text-xl text-center font-light">Изменяй свою машину</h2>
+
+            <div class="my-8" id="exterior-buttons">
+                <h3 class="mb-2">Цвет покраски</h3>
+                <div class="flex space-x-4">
+                    <button class="btn-selected transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-stealth-grey.avif" alt="Stealth Grey" class="w-22">
+                    </button>
+
+                    <button class="transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-pearl-white.avif" alt="Pearl White" class="w-22">
+                    </button>
+
+                    <button class="transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-deep-blue-metallic.avif" alt="Deep Blue"
+                            class="w-22">
+                    </button>
+
+                    <button class="transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-solid-black.avif" alt="Solid Black" class="w-22">
+                    </button>
+
+                    <button class="transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-ultra-red.avif" alt="Ultra Red" class="w-22">
+                    </button>
+
+                    <button class="transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-quicksilver.avif" alt="Quicksilver" class="w-22">
+                    </button>
+                </div>
+            </div>
+
+            <div class="my-8" id="interior-buttons">
+                <h3 class="mb-2">Цвет салона</h3>
+                <div class="flex space-x-4">
+                    <button class="btn-selected transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-dark.avif" alt="Dark" class="w-12">
+                    </button>
+
+                    <button class="transition-transfom duration-300 hover:scale-110">
+                        <img src="assets/img/car-configurator/button-light.avif" alt="Light" class="w-12">
+                    </button>
+                </div>
+            </div>
+
+            <div class="mb-8" id="wheel-buttons">
+                <h3 class="mb-2">Колеса</h3>
+                <button
+                    class="w-full py-4 mb-2 bg-gray-700 hover:bg-gray-600 hover:text-white text-white rounded-lg transition-colors duration-300">Стандартные
+                    колеса</button>
+                <button
+                    class="w-full py-4 mb-2 bg-gray-300 hover:bg-gray-600 hover:text-white text-white rounded-lg transition-colors duration-300">Специальные
+                    диски (+15 000₽)</button>
+            </div>
+
+            <div class="border p-4 mb-8 rounded-lg shadow">
+                <h3 class="mb-2">Полный автопилот</h3>
+                <label class="flex items-center space-x-3">
+                    <input type="checkbox" id="full-self-driving-checkbox" class="form-checkbox" h-5 w-5 text-blue-600>
+                    <span>Добавить полный автопилот (+85 000₽)</span>
+                </label>
+            </div>
+
+            <div class="mb-8">
+                <h3 class="mb-2">Улучшенная производительность</h3>
+                <button class="w-full py-4 bg-gray-200 hover:bg-gray-400 rounded-lg" id="performance-btn">Модель первого
+                    класса (+50 000₽)</button>
+            </div>
+
+            <div class="my-8">
+                <h3 class="mb-2">
+                    <div class="space-y-4">
+                        <label class="flex items-center justify-between py-4 px-4 border rounded-lg shadow">
+                            <span>Поддоны к центральной консоли</span>
+                            <span class="flex items-center space-x-4">
+                                <input type="checkbox" class="accesory-form-checkbox h-5 w-5">
+                                <span>+3 500₽</span>
+                            </span>
+                        </label>
+
+                        <label class="flex items-center justify-between py-4 px-4 border rounded-lg shadow">
+                            <span>Тонирование</span>
+                            <span class="flex items-center space-x-2">
+                                <input type="checkbox" class="accesory-form-checkbox h-5 w-5">
+                                <span>+10 500₽</span>
+                            </span>
+                        </label>
+
+                        <label class="flex items-center justify-between py-4 px-4 border rounded-lg shadow">
+                            <span>Погодные улучшения</span>
+                            <span class="flex items-center space-x-4">
+                                <input type="checkbox" class="accesory-form-checkbox h-5 w-5">
+                                <span>+2 200₽</span>
+                            </span>
+                        </label>
+                    </div>
+                </h3>
+            </div>
+
+            <div class="pt-4">
+                <h3 class="text-lg">Общая цена</h3>
+                <p id="total-price" class="text-2xl">1 680 000₽</p>
+            </div>
+
+            <div class="border-t pt-4 mt-6">
+                <h3 class="text-lg">Платеж по данным критериям</h3>
+                <div class="mt-4">
+                    <p>
+                        Авансовый платёж:
+                        <span id="down-payment">65 000₽</span>
+                    </p>
+                    <p>Срок кредита: <span>60 месяцев</span></p>
+                    <p>Процентная ставка: <span>3% в год</span></p>
+                    <p>Месячная оплата: <span id="monthly-payment" class="text-2xl">17 328₽</span></p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <!-- Car-Configurator (Конец) -->
+
+    <!-- Form (Начало) -->
+    <form>
+        <div class="form-con">
+            <div class="form-images">
+                <img src="assets/img/form/quad-ra.png" alt="">
+                <div class="form-car">
+                    <img src="assets/img/form/car.png" alt="">
+                </div>
+            </div>
+
+            <div class="form-main">
+                <div class="form-text">
+                    <div class="form-text-main">
+                        <h2>Поможем вам с выбором автомобиля</h2>
+                        <h3>Специалист свяжется с вами в течении дня</h3>
+                    </div>
+
+                    <div class="form-block">
+                        <div class="form-first-row">
+                            <input type="tel" placeholder="+ 7 (___)-___-__-__" class="input-color">
+                            <input type="email" placeholder="Ваша почта" class="input-color">
+                            <input type="text" placeholder="Тип автомобиля" class="input-color">
+                            <button class="form-button">Отправить</button>
+                        </div>
+
+                        <div class="form-second-row">
+                            <input type="text" placeholder="Примечания" class="input-2-color">
+                            <a href="">Нажимая кнопку вы соглашаетесь на <span>обработку ваших персональных
+                                    данных</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Form (Конец) -->
+
+    <!-- Отзывы (Начало) -->
+    <div class="reviews-text-name container" id="review-id">
+        <h2>Отзывы</h2>
+    </div>
+
+    <div class="reviews container">
+        <div class="reviews-section">
+
+            <div class="review">
+                <div class="review-outer">
+                    <div class="rating">
+                        <h3>5.0</h3>
+                        <img src="assets/img/rating/stars.svg" alt="">
+                    </div>
+                    <p>"Автомобиль выглядит стильно и отлично себя ведет на дороге. Я в восторге от тихого и плавного
+                        вождения, а также от того, что могу сэкономить на топливе и зарядке. Рекомендую всем!"
+                    </p>
+                </div>
+
+                <div class="review-inner">
+                    <img src="assets/img/rating/ppl.png" alt="">
+                    <div class="customer">
+                        <h4>Татьяна Волк</h4>
+                        <p>13 сентября, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reviews-section">
+
+            <div class="review">
+                <div class="review-outer">
+                    <div class="rating">
+                        <h3>5.0</h3>
+                        <img src="assets/img/rating/stars.svg" alt="">
+                    </div>
+                    <p>“Я впечатлен качеством сборки и продуманными технологиями, которые делают вождение комфортным и
+                        безопасным. Я рад, что выбрал именно эту компанию, и с нетерпением жду новых моделей!"
+                    </p>
+                </div>
+
+                <div class="review-inner">
+                    <img src="assets/img/rating/ppl.png" alt="">
+                    <div class="customer">
+                        <h4>Олег Серебро</h4>
+                        <p>6 августа, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="reviews-section">
+
+            <div class="review">
+                <div class="review-outer">
+                    <div class="rating">
+                        <h3>5.0</h3>
+                        <img src="assets/img/rating/stars.svg" alt="">
+                    </div>
+                    <p>"С момента покупки я ощутила разницу в передвижении по городу — никаких пробок на заправках и
+                        полное отсутствие запаха выхлопных газов.
+                        Спасибо, Quadra!"
+                    </p>
+                </div>
+
+                <div class="review-inner">
+                    <img src="assets/img/rating/ppl.png" alt="">
+                    <div class="customer">
+                        <h4>Влад Строй</h4>
+                        <p>13 декабря, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="arrows">
+        <img src="assets/img/rating/arrow-left.png" alt="">
+        <img src="assets/img/rating/arrow-right.png" alt="">
+    </div>
+    <!-- Отзывы (Конец) -->
+
+    <!-- Footer (Начало) -->
+    <footer>
+        <div class="footer-img">
+            <img src="assets/img/footer/footer.png" alt="">
+            <div class="footer-block">
+                <div class="footer-blocks-block">
+                    <div class="footer-blocks">
+                        <div class="footer-left">
+                            <img src="assets/img/footer/logo.png" alt="">
+                        </div>
+
+                        <div class="footer-cat">
+                            <div class="footer-cat-first">
+                                <a href="#car-configurator-id">Калькулятор</a>
+                                <a href="#about-id">О нас</a>
+                                <a href="#review-id">Отзывы</a>
+                            </div>
+
+                            <div class="footer-cat-second">
+                                <div class="footer-cat-img">
+                                    <img src="assets/img/footer/tel.png" alt="">
+                                    <img src="assets/img/footer/mail.png" alt="">
+                                    <img src="assets/img/footer/map.png" alt="">
+                                </div>
+
+                                <div class="footer-cat-second-text">
+                                    <a href="tel:+93039339393">+ 8 939 393 93 93</a>
+                                    <a href="mailto:quadra@mail.com">quadra@mail.com</a>
+                                    <a href="#">г. Казань, ул. Лермонтова, д 13 Б</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-third-block">
+                        <div class="footer-third">
+                            <div class="footer-third-first">
+                                <div class="footer-up">
+                                    <img src="assets/img/footer/telegram.png" alt="">
+                                </div>
+                                <img src="assets/img/footer/vk.png" alt="">
+                                <img src="assets/img/footer/whatsapp.png" alt="">
+                            </div>
+
+                            <div class="footer-third-text">
+                                <div class="footer-up-2">
+                                    <p>@quadracar</p>
+                                </div>
+                                <p>quadracarelectric</p>
+                                <p>quadracar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-last">
+                    <p>Политика обработки персональных данных 2024 "Quadra"</p>
+                    <p>Пятков Тимур Дмитриевич</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer (Конец) -->
+</body>
+
+</html>
